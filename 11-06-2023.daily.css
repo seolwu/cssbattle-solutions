@@ -1,0 +1,49 @@
+<div class="ro-l"></div>
+<div class="ro-r"></div>
+<div class="ro-t"></div>
+<div class="ro-b"></div>
+<div class="scb0">
+  <div class="ro"></div>
+</div>
+<style>
+  *{
+    --bg-0:#302562;
+    --bg-1:#0098D1
+  }
+  body{
+    background:var(--bg-0);
+    position:relative
+  }
+  body,[class*=c]{
+    display:flex;
+    justify-content:center;
+    align-items:center
+  }
+  div{
+    width:100px;
+    height:100px;
+    background:var(--bg-1);
+    position:absolute
+  }
+  [class*="-l"]{left:82px}
+  [class*="-r"]{right:82px}
+  [class*="-t"]{top:32px}
+  [class*="-b"]{bottom:32px}
+  [class*=r]{border-radius:50%}
+  [class*=o]::before{
+    content:'';
+    width:60px;
+    height:60px;
+    background:var(--bg-0);
+    position:absolute;
+    inset:0;
+    margin:auto;
+    border-radius:50%
+  }
+  [class*=b0]{background:var(--bg-0)}
+  [class*=b1]{background:var(--bg-1)}
+  [class*=s]{
+    width:120px;
+    height:120px
+  }
+</style>
