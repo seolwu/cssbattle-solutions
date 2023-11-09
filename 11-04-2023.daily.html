@@ -1,0 +1,24 @@
+<div></div>
+<style>
+  body {
+    background: #504B72;
+  }
+  body, div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: #FFFBCC;
+  }
+  div::before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    background: #504B72;
+    transform: rotate(45deg)
+  }
+</style>
