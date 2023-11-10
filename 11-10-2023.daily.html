@@ -1,0 +1,66 @@
+<div class="r:">
+  <div class="xa">
+    <div></div>
+  </div>
+  <div class="xb">
+    <div></div>
+  </div>
+  <div class="xc">
+    <div></div>
+  </div>
+  <div class="xd">
+    <div></div>
+  </div>
+</div>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body, body>div {
+    background: #FBC3E4;
+  }
+  div {
+    width: 120px;
+    height: 120px;
+  }
+  [class*=r] {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+  [class*=":"]>* {
+    background: #8C0052;
+    position: absolute;
+  }
+  [class*=x]>* {
+    content: '';
+    width: 80px;
+    height: 80px;
+    background: #FBC3E4;
+    position: absolute;
+  }
+  [class*=a], [class*=a]>* {
+    border-bottom-right-radius: 120px;
+    border-top-left-radius: 100px;
+  }
+  [class*=b], [class*=b]>* {
+    border-bottom-left-radius: 120px;
+    border-top-right-radius: 100px;
+    top: 0;
+    right: 0;
+  }
+  [class*=c], [class*=c]>* {
+    border-top-right-radius: 120px;
+    border-bottom-left-radius: 100px;
+    bottom: 0;
+  }
+  [class*=d], [class*=d]>* {
+    border-top-left-radius: 120px;
+    border-bottom-right-radius: 100px;
+    bottom: 0;
+    right: 0;
+  }
+  
+</style>
