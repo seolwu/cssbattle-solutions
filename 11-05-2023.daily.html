@@ -1,0 +1,52 @@
+<div>
+  <div class="o"></div>
+  <div class="oz" style="right:0"></div>
+  <div class="oz:2" style="left:0;bottom:0"></div>
+  <div class="oz:1" style="right:0;bottom:0"></div>
+  <div class="oz" style="left:15%;bottom:15%"></div>
+  <div class="oz:2" style="right:15%;top:15%"></div>
+</div>
+<style>
+  body {
+    background: #9C57A8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+  div:is([class]) {
+    width: 85px;
+    height: 85px;
+    background: #651E57;
+  }
+  [class*=o] {
+    border-bottom-right-radius: 57px;
+    border-top-left-radius: 65px;
+    position: absolute;
+  }
+  [class*=o]::before {
+    content: '';
+    width: 55px;
+    height: 55px;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    background: #9C57A8;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  [class*=z] {
+    --rot: 90deg;
+    transform: rotate(var(--rot));
+  }
+  [class*=":1"] {
+    --rot: 180deg;
+  }
+  [class*=":2"] {
+    --rot: 270deg;
+  }
+</style>
