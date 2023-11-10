@@ -1,0 +1,43 @@
+<div>
+  <div class="x"></div>
+  <div class="xr"></div>
+  <div class="d"></div>
+</div>
+<style>
+  body {
+    background: #8C80BB;
+  }
+  body, [class*=c] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    width: 230px;
+    height: 160px;
+    position: relative;
+  }
+  div:is([class]) {
+    position: absolute;
+    background: #FCDFEB;
+  }
+  [class*=x] {
+    width: 100px;
+    height: 100px;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 20px;
+  }
+  [class*=r] {
+    right: 0;
+    transform: rotate(90deg);
+  }
+  [class*=d] {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+</style>
