@@ -1,0 +1,56 @@
+<div id="f">
+  <div class="ax"></div>
+  <div class="ay"></div>
+</div>
+<style>
+  body {
+    background: #73385A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #f {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+  [class*=a] {
+    position: absolute;
+  }
+  [class*=x],
+  [class*=y] {
+    border: 40px solid #FCDFEB;
+  }
+  [class*=x]::before,
+  [class*=y]::before {
+    content: '';
+    position: absolute;
+    background: #FCDFEB;
+  }
+  [class*=x] {
+    border-right: 0;
+    border-bottom: 0;
+    width: 120px;
+    height: 120px;
+  }
+  [class*=x]::before {
+    width: 120px;
+    height: 120px;
+    top: -40px;
+    left: -40px;
+  }
+  [class*=y] {
+    border-right: 0;
+    border-bottom: 0;
+    width: 80px;
+    height: 80px;
+    right: 0;
+    bottom: 0;
+  }
+  [class*=y]::before {
+    width: 40px;
+    height: 40px;
+    right: 0;
+    bottom: 0;
+  }
+</style>
