@@ -1,0 +1,60 @@
+<div class="r"></div>
+<div class="q b"></div>
+<div class="p b"></div>
+<div class="n d"></div>
+<div class="u d"></div>
+<style>
+  body {
+    display: flex;
+    justify-content:center;
+    align-items:center
+  }
+  div {
+    width: 140px;
+    height: 140px;
+    background: #fcaf17
+  }
+  .r::after, body {
+    background: #7b3738
+  }
+  .b, .d, .r::after {
+    position: absolute
+  }
+  .r, .r::after {
+    border-radius: 50%
+  }
+  .b {
+    width: 200px;
+    height: 40px
+  }
+  .d {
+    width: 40px;
+    height: 150px
+  }
+  .q {
+    top: 80px;
+    left: 0
+  }
+  .p {
+    bottom: 80px;
+    right: 0
+  }
+  .n {
+    top: 0;
+    right: 130px
+  }
+  .u {
+    bottom: 0;
+    left: 130px
+  }
+  .r {
+    position: relative
+  }
+  .r::after {
+    content: '';
+    width: 60px;
+    height: 60px;
+    inset: 0;
+    margin: auto
+  }
+</style>
